@@ -6,6 +6,11 @@ cube(`Rental`, {
       measures: [Rental.count],
       timeDimension: Rental.lastUpdate,
       granularity: `day`
+    },
+    anotherOne: {
+      measures: [Rental.count],
+      timeDimension: Rental.lastUpdate,
+      granularity: `week`
     }
   },
 
