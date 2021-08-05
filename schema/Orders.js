@@ -15,8 +15,6 @@ cube(`Orders`, {
     //test1
     // Pre-Aggregations definitions go here
     // Learn more here: https://cube.dev/docs/caching/pre-aggregations/getting-started
-    main: 
-      {}
   },
 
   measures: {
