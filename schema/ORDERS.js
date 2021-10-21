@@ -4,7 +4,14 @@ cube(`Orders`, {
   joins: {
     
   },
-  
+  preAggregations: {
+    main: {
+      measures: [Orders.number],
+      dimensions: [Orders.status],
+      timeDimension: Orders.completedAt,
+      granularity: `day`
+    }
+  },
   measures: {
     count: {
       type: `count`,
